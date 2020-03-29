@@ -23,7 +23,7 @@ public class User {
 	private String password;
 	private boolean active;
 	
-	//comma separated roles like ADMIN,MANAGERS,DEVELOPERS
+	//comma separated roles like ROLE_ADMIN,ROLE_MANAGERS,ROLE_DEVELOPERS
 	private String roles;
 	
 }
