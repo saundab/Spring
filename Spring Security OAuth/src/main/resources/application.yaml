@@ -1,0 +1,34 @@
+logging:
+  level:
+    org.springframework: TRACE
+    com.mkyong: DEBUG
+  pattern:
+    console: "%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"
+    file: "%d %p %c{1.} [%t] %m%n"
+  file: app.log
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: postgres
+    initialization-mode: always
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
+security:
+    oauth2:
+      client:
+        clientId: 218099132843720
+        clientSecret: cae52b22746dfe4bb95af1083105bd35
+        accessTokenUri: https://graph.facebook.com/oauth/access_token
+        userAuthorizationUri: https://www.facebook.com/dialog/oauth
+        token_name: oauth_token
+        authenticationScheme: query
+        clientAuthenticationScheme: form
+      resource:
+        userInfoUri: https://graph.facebook.com/me
