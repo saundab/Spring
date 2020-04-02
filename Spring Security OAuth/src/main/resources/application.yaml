@@ -23,8 +23,8 @@ spring:
 security:
     oauth2:
       client:
-        clientId: 218099132843720
-        clientSecret: cae52b22746dfe4bb95af1083105bd35
+        clientId: xxx
+        clientSecret: xxx
         accessTokenUri: https://graph.facebook.com/oauth/access_token
         userAuthorizationUri: https://www.facebook.com/dialog/oauth
         token_name: oauth_token
